@@ -1,0 +1,4 @@
+.router-link-active{
+    @apply bg-gray-200;
+}
+

@@ -7,15 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shipkart-angular';
-  menu = false;
+
   navbarOpen = false;
   search: String = '';
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
-  toggle() {
-    this.menu = !this.menu;
-  }
+
   ngOnInit(): void {}
 }
