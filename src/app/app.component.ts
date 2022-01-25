@@ -10,9 +10,20 @@ export class AppComponent {
 
   navbarOpen = false;
   search: String = '';
+  cartOpen = false;
+  isOpen = false;
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+
+  toggleCart() {
+    console.log(this.cartOpen);
+    this.cartOpen = !this.cartOpen;
+  }
+
+  toggleNavbar2() {
+    this.isOpen = !this.isOpen;
   }
 
   ngOnInit(): void {}

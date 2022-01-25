@@ -13,6 +13,8 @@ import { ProductCategoryMenuComponent } from './components/product-category-menu
 import { SearchComponent } from './components/search/search.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
+import { NgbPaginationModule } from './components/pagination/pagination.module';
+
 const routes: Routes = [
   { path: 'products/:id', component: ProductDetailsComponent },
   { path: 'search/:keyword', component: ProductListComponent },
@@ -38,6 +40,7 @@ const routes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgbPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
